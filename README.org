@@ -22,3 +22,12 @@ Depending on which backend you are using for HTML export, you should add one or 
     'slimhtml
   :translate-alist '((timestamp . ox-html5-slimhtml-timestamp)))
 #+end_src
+
+Ensure that you have included both the org and ox-html5-timestamp-helper packages earlier in your =init.el= file.
+If you have installed Org and ox-html5-timestamp-helper through ELPA, you should be fine.
+Otherwise, you should place these lines early in =init.el=:
+
+#+begin_src elisp
+(require 'org)
+(require 'ox-html5-timestamp-helper)
+#+end_src
