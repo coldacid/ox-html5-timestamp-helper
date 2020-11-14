@@ -7,7 +7,7 @@ It provides transcoder methods for both Org's default HTML export backend as wel
 * Usage
 
 Using this library to add <time> tag support requires defining derived export backends.
-Depending on which backend you are using for HTML export, you should add one or both of the following blocks to your `init.el` file:
+Depending on which backend you are using for HTML export, you should add one or both of the following blocks to your =init.el= file:
 
 #+CAPTION: Derived backend for ox-html
 #+begin_src elisp
