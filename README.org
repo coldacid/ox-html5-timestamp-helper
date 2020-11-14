@@ -1,0 +1,26 @@
+#+TITLE: ox-html5-timestamp-helper
+#+AUTHOR: Chris Charabaruk
+
+* html5-timestamp-helper
+
+The *html5-timestamp-helper* library provides HTML5 <time> tag export for timestamps from Org mode.
+It provides transcoder methods for both Org's default HTML export backend as well as for the [[https://github.com/balddotcat/ox-slimhtml][ox-slimhtml]] export backend.
+
+** Usage
+
+Using this library to add <time> tag support requires defining derived export backends.
+Depending on which backend you are using for HTML export, you should add one or both of the following blocks to your `init.el` file:
+
+#+CAPTION: Derived backend for ox-html
+#+begin_src elisp
+(org-export-define-derived-backend 'custom-html
+    'html
+  :translate-alist '((timestamp . ox-html5-html-timestamp)))
+#+end_src
+
+#+CAPTION: Derived backend for ox-slimhtml
+#+begin_src elisp
+(org-export-define-derived-backend 'custom-slimhtml
+    'slimhtml
+  :translate-alist '((timestamp . ox-html5-slimhtml-timestamp)))
+#+end_src
