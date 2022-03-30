@@ -84,7 +84,7 @@ TZ is an optional time zone identifier."
          (format-string (cond ((string-equal tz "UTC") "%Y-%m-%dT%H:%M:%SZ")
                               ((not with-time-p) "%Y-%m-%d")
                               ((stringp tz) (concat "%Y-%m-%dT%H:%M:%S" tz))
-                              (t (replace-regex-in-string "%Z"
+                              (t (replace-regexp-in-string "%Z"
                                                           org-icalendar-timezone
                                                           org-icalendar-date-time-format
                                                           t))))
