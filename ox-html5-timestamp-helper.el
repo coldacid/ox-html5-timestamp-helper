@@ -1,9 +1,9 @@
 ;;; ox-html5-timestamp-helper.el --- HTML5 <time> tag support for Org HTML and slimhtml export backends -*- lexical-binding: t; -*-
-;; Copyright (c) 2020-2021 Chris Charabaruk
+;; Copyright (c) 2020-2022 Chris Charabaruk
 
 ;; Author: Chris Charabaruk <emacs at chris dot charabaruk dot com>
 ;; Created: November 2020
-;; Package-Version: 0.1
+;; Package-Version: 0.2
 ;; Keywords: org org-export ox-html ox-slimhtml
 ;; Homepage: https://github.com/coldacid/ox-html5-timestamp-helper
 ;; Package-Requires: ((emacs "24") (org "9.4"))
